@@ -1,6 +1,6 @@
 {
   "name": "commit-messages",
-  "version": "1.0.0",
+  "version": "0.0.0-PLACEHOLDER",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,5 +9,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "semantic-release": "^25.0.8"
+  },
+  "release": {
+      "branches": [
+          "main"
+      ],
+      "plugins", [
+          '@semantic-release/commit-analyzer', 
+          '@semantic-release/release-notes-generator', 
+          '@semantic-release/github'
+      ]
+  }
 }
